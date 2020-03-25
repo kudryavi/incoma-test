@@ -1,0 +1,11 @@
+<mat-card>
+  <form class="form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <mat-form-field>
+      <input matInput placeholder="Имя" ngModel name="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Тип" ngModel name="type">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Искать</button>
+  </form>
+</mat-card>
